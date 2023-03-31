@@ -16,8 +16,7 @@ const HomeDetail = () => {
 
     useEffect(() => {
         getMovie();
-    })
-
+    },[])
     return (
         <div className='movie-detail'>
             {loading ? (

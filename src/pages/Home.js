@@ -18,7 +18,9 @@ class Home extends React.Component {
     }=await axios.get('https://yts-proxy.now.sh/list_movies.json?sort_by=rating')
       //console.log(movies);
       this.setState({movies, isLoading:false})//키와 밸류값이 같을 때는 ({movies: movies})를 ({movies})라고 써도 됨
+      console.log(movies);
     }
+    
     componentDidMount(){
       this.getMovies();
     }

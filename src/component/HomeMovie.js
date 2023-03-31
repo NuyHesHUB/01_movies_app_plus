@@ -4,6 +4,7 @@ import "./HomeMovie.scss"
 import {Link} from "react-router-dom"
 
 const HomeMovie = ({id,year,title,summary,poster,genres}) => {/* <-- 파라미터값 */
+/* console.log(year); */
     return (
         <div className='movie'>
             {/* Link를 하여 전부 a 태그 화 시킴.. 누르면 이동하기 위함 */}
@@ -26,15 +27,15 @@ const HomeMovie = ({id,year,title,summary,poster,genres}) => {/* <-- 파라미�
         </div>
     );
 };
-
-HomeMovie.propTypes={
+/* array는 배열 안에 스트링 */
+/* HomeMovie.propTypes={
     id: propTypes.number.isRequired,
     year: propTypes.number.isRequired,
     title: propTypes.string.isRequired,
     summary: propTypes.string.isRequired,
     poster: propTypes.string.isRequired,
     genres:propTypes.arrayOf(propTypes.string).isRequired,
-    /* array는 배열 안에 스트링 */
-};
+    
+}; */
 
 export default HomeMovie;
